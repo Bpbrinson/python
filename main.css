@@ -83,8 +83,12 @@ td {
 }
 
 table {
-  width: 100;
+  width: 100%;
   padding-left: 10px;
+}
+
+td {
+  width: 10px;
 }
 
 th {
