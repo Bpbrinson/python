@@ -24,6 +24,7 @@
       $query="SELECT * FROM finance";
       $result = $conn->query($query);
       $conn->close();
+      
       ?>
       <br><br>
       <table class="table">
