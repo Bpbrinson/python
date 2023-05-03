@@ -12,8 +12,8 @@
     <nav>
       <ul>
         <li><a href="index.html">Home</a></li>
-        <li><a href="aspirations.html">Aspirations</a></li>
-        <li><a href="finance.html">Finance</a></li>
+        <li><a href="aspirations.php">Aspirations</a></li>
+        <li><a href="finance.php">Finance</a></li>
       </ul>
     </nav>
 

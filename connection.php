@@ -11,10 +11,5 @@ if ($conn->connect_error) {
   die("Connection failed: " . $conn->connect_error);
 }
 
-// Select data from table
-$sql = "SELECT * FROM finance";
-$result = $conn->query($sql);
-
-// Close connection
 $conn->close();
 ?>
