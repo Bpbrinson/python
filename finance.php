@@ -21,9 +21,8 @@
       <?php
       ini_set('display_errors', 1);
       include_once('connection.php');
-      $query="SELECT * FROM finance";
+      $query="SELECT * FROM financial_data";
       $result = $conn->query($query);
-      $conn->close();
       
       ?>
       <br><br>
@@ -42,6 +41,7 @@
           <th>Capital One Savor</th>
           <th>Savor Statement</th>
           <th>Total Credit Debt</th>
+	  <th>Total Amount</th>
           <th>Etrade</th>
 		</tr>
     <?php
@@ -52,20 +52,20 @@
         <!-- FETCHING DATA FROM EACH
         ROW OF EVERY COLUMN -->
         <td><?php echo $rows['date']; ?></td>
-        <td><?php echo $rows['boa_checking']; ?></td>
-        <td><?php echo $rows['boa_savings_vacation']; ?></td>
-        <td><?php echo $rows['boa_savings_apt']; ?></td>
-        <td><?php echo $rows['boa_credit']; ?></td>
-        <td><?php echo $rows['boa_statement']; ?></td>
-        <td><?php echo $rows['amex_credit']; ?></td>
-        <td><?php echo $rows['amex_statement']; ?></td>
-        <td><?php echo $rows['capital_one_venture_x']; ?></td>
-        <td><?php echo $rows['capital_one_venture_x_statement']; ?></td>
-        <td><?php echo $rows['capital_one_savor']; ?></td>
-        <td><?php echo $rows['capital_one_savor_statement']; ?></td>
-        <td><?php echo $rows['total_credit_debt']; ?></td>
-        <td><?php echo $rows['total_amount']; ?></td>
-        <td><?php echo $rows['etrade']; ?></td>
+        <td>$<?php echo $rows['boa_checking']; ?></td>
+        <td>$<?php echo $rows['boa_savings_vacation']; ?></td>
+        <td>$<?php echo $rows['boa_savings_apt']; ?></td>
+        <td>$<?php echo $rows['boa_credit']; ?></td>
+        <td>$<?php echo $rows['boa_statement']; ?></td>
+        <td>$<?php echo $rows['amex_credit']; ?></td>
+        <td>$<?php echo $rows['amex_statement']; ?></td>
+        <td>$<?php echo $rows['capital_one_venture_x']; ?></td>
+        <td>$<?php echo $rows['capital_one_venture_x_statement']; ?></td>
+        <td>$<?php echo $rows['capital_one_savor']; ?></td>
+        <td>$<?php echo $rows['capital_one_savor_statement']; ?></td>
+        <td>$<?php echo $rows['total_credit_debt']; ?></td>
+        <td>$<?php echo $rows['total_amount']; ?></td>
+        <td>$<?php echo $rows['etrade']; ?></td>
     </tr>
     <?php
     }
