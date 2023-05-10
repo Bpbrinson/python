@@ -3,25 +3,28 @@
   <head>
     <title>My Webpage</title>
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/main.css') }}" />
+    <script src="{{ url_for('static', filename='main.js') }}"></script>
   </head>
   <body>
     <header>
-      <h1>Welcome to Brandon's Webpage</h1>
+      <h1>Finance</h1>
     </header>
 
     <nav>
       <ul>
-        <li><a href="index.html">Home</a></li>
+        <li><a href="/">Home</a></li>
         <li><a href="aspirations.html">Aspirations</a></li>
+	<li><a href="budget.html">Budget</a></li>
         <li><a href="finance.html">Finance</a></li>
       </ul>
     </nav>
 
     <body>
       <br><br>
-      <table class="table">
+      <table class="table" id="test">
         <tr>
-          <th>Date</th>
+          <th>#</th>
+          <th style="width:7%">Date</th>
           <th>BoA Checkings</th>
           <th>BoA Savings (Vacation)</th>
           <th>BoA Savings Apt./Rainy</th>
@@ -34,13 +37,14 @@
           <th>Capital One Savor</th>
           <th>Savor Statement</th>
           <th>Total Credit Debt</th>
-	        <th>Total Amount</th>
+	  <th>Total Amount</th>
           <th>Etrade</th>
     </tr>
     <!-- here is a for-loop to give us all the data -->	
     
     {% for value in data %}
     <tr>
+      <td>{{ value.id }}</td>
       <td>{{ value.date }}</td>
       <td>${{ value.boa_checking }}</td>
       <td>${{ value.boa_savings_vacation }}</td>
@@ -59,10 +63,10 @@
     </tr>
     {% endfor %}
 	</table>
+ <br><br>
   <button onclick="addCode()">Update</button><br>
     <footer>
       <p>&copy; 2023 My Webpage</p>
     </footer>
-    <script src="main.js"></script>
   </body>
 </html>

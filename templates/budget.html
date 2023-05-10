@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My Webpage</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/main.css') }}" />
+    <script src="{{ url_for('static', filename='main.js') }}"></script>
+  </head>
+  <body>
+    <header>
+      <h1>Budget</h1>
+    </header>
+
+    <nav>
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="aspirations.html">Aspirations</a></li>
+        <li><a href="budget.html">Budget</a></li>
+        <li><a href="finance.html">Finance</a></li>
+      </ul>
+    </nav>
+
+    <main>
+  <div id="food">  
+  <table class="column" style="width:40%; float: left;margin-right: 25px;">
+  <tr>
+    <th>Category</th>
+    <th>Spent (4/24-4/30)</th>
+    <th>Spent (5/1 - 5/7)</th>
+  </tr>
+  <tr>
+    <td onclick="addFood()">Food</</td>
+    <td>$100</td>
+    <td>$120</td>
+  </tr>
+  <tr>
+    <td>Shopping</td>
+    <td>$50</td>
+    <td>$80</td>
+  </tr>
+  <tr>
+    <td>Day to Day</td>
+    <td>$75</td>
+    <td>$90</td>
+  </tr>
+  <tr>
+    <td>E.C.</td>
+    <td>$30</td>
+    <td>$35</td>
+  </tr>
+  <tr>
+    <td>Hair Cut</td>
+    <td>$20</td>
+    <td>$25</td>
+  </tr>
+  <tr>
+    <td>Unanimous</td>
+    <td>$0</td>
+    <td>$50</td>
+  </tr>
+  <tr>
+    <td>Asjee</td>
+    <td>$40</td>
+    <td>$45</td>
+  </tr>
+  <tr>
+    <td>Gas</td>
+    <td>$50</td>
+    <td>$60</td>
+  </tr>
+  <tr>
+    <td>Moving Out (Savings)</td>
+    <td>$200</td>
+    <td>$250</td>
+  </tr>
+  <tr>
+    <td>Vacation (Savings)</td>
+    <td>$100</td>
+    <td>$150</td>
+  </tr>
+  <tr>
+    <td>Total</td>
+    <td>$</td>
+    <td>$</td>
+  </tr>
+</table>
+<button type="button" id="meal" onclick="addFood()">Edit</button>
+<button type="button" id="meal1" onclick="viewFood()">View Budget</button>
+</div>
+    </main>
+
+    <footer>
+      <p>&copy; 2023 My Webpage</p>
+    </footer>
+  </body>
+</html>
