@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My Webpage</title>
+    <link rel="stylesheet" type="text/css" href="main.css" />
+    <script src="main.js"></script>
+  </head>
+  <body>
+    <header>
+      <h1>Budget</h1>
+    </header>
+
+    <nav>
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="aspirations.html">Aspirations</a></li>
+        <li><a href="budget.html">Budget</a></li>
+        <li><a href="finance.html">Finance</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <div class="table-wrapper">
+        <table class="column">
+          <tr>
+            <th>Category</th>
+            <th>Spent (4/24-4/30)</th>
+            <th>Spent (5/1 - 5/7)</th>
+          </tr>
+          <tr>
+            <td>
+              Food
+              <button
+                type="button"
+                id="food_add"
+                onclick="addFood()"
+                style="margin-left: 25px"
+              >
+                Edit
+              </button>
+              <button
+                type="button"
+                id="food_view"
+                style="margin-left: 10px"
+                onclick="viewFood()"
+              >
+                View
+              </button>
+            </td>
+            <td>$100</td>
+            <td>$120</td>
+          </tr>
+          <tr>
+            <td>
+              Shopping
+              <button
+                type="button"
+                id="shopping_add"
+                onclick="addShopping()"
+                style="margin-left: 25px"
+              >
+                Edit
+              </button>
+              <button
+                type="button"
+                id="shopping_view"
+                style="margin-left: 10px"
+                onclick="viewShopping()"
+              >
+                View
+              </button>
+            </td>
+            <td>$50</td>
+            <td>$80</td>
+          </tr>
+          <tr>
+            <td>
+              Day to Day
+              <button
+                type="button"
+                id="daytoday_add"
+                onclick="addDaytoday()"
+                style="margin-left: 10px"
+              >
+                Edit
+              </button>
+              <button
+                type="button"
+                id="daytoday_view"
+                style="margin-left: 10px"
+                onclick="daytodayShopping()"
+              >
+                View
+              </button>
+            </td>
+            <td>$75</td>
+            <td>$90</td>
+          </tr>
+          <tr>
+            <td>
+              E.C.
+              <button
+                type="button"
+                id="ecg_add"
+                onclick="addEC()"
+                style="margin-left: 10px"
+              >
+                Edit
+              </button>
+              <button
+                type="button"
+                id="ec_view"
+                style="margin-left: 10px"
+                onclick="viewEC()"
+              >
+                View
+              </button>
+            </td>
+            <td>$30</td>
+            <td>$35</td>
+          </tr>
+          <tr>
+            <td>
+              Hair Cut
+              <button
+                type="button"
+                id="haircut_add"
+                onclick="addHaircut()"
+                style="margin-left: 10px"
+              >
+                Edit
+              </button>
+              <button
+                type="button"
+                id="haircut_view"
+                style="margin-left: 10px"
+                onclick="viewHaircut()"
+              >
+                View
+              </button>
+            </td>
+            <td>$20</td>
+            <td>$25</td>
+          </tr>
+          <tr>
+            <td>
+              Unanimous
+              <button
+                type="button"
+                id="unanimous_add"
+                onclick="addUnanimous()"
+                style="margin-left: 10px"
+              >
+                Edit
+              </button>
+              <button
+                type="button"
+                id="unanimous_view"
+                style="margin-left: 10px"
+                onclick="viewUnanimous()"
+              >
+                View
+              </button>
+            </td>
+            <td>$0</td>
+            <td>$50</td>
+          </tr>
+          <tr>
+            <td>
+              Asjee
+              <button
+                type="button"
+                id="asjee_add"
+                onclick="addAsjee()"
+                style="margin-left: 10px"
+              >
+                Edit
+              </button>
+              <button
+                type="button"
+                id="asjee_view"
+                style="margin-left: 10px"
+                onclick="viewAsjee()"
+              >
+                View
+              </button>
+            </td>
+            <td>$40</td>
+            <td>$45</td>
+          </tr>
+          <tr>
+            <td>
+              Gas
+              <button
+                type="button"
+                id="gas_add"
+                onclick="addGas()"
+                style="margin-left: 10px"
+              >
+                Edit
+              </button>
+              <button
+                type="button"
+                id="gas_view"
+                style="margin-left: 10px"
+                onclick="viewGas()"
+              >
+                View
+              </button>
+            </td>
+            <td>$50</td>
+            <td>$60</td>
+          </tr>
+          <tr>
+            <td>Moving Out (Savings)</td>
+            <td>$200</td>
+            <td>$250</td>
+          </tr>
+          <tr>
+            <td>Vacation (Savings)</td>
+            <td>$100</td>
+            <td>$150</td>
+          </tr>
+          <tr>
+            <td>Total</td>
+            <td>$</td>
+            <td>$</td>
+          </tr>
+        </table>
+      </div>
+    </main>
+
+    <footer>
+      <p>&copy; 2023 My Webpage</p>
+    </footer>
+  </body>
+</html>
